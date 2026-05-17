@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from 'vitepress'
+import { useRouter, withBase } from 'vitepress'
 
 const router = useRouter()
 
@@ -8,16 +8,15 @@ const goHome = () => {
 }
 </script>
 
-
 <template>
     <div class="NotFound">
-        <img src="/404-page.png" alt="404 Not Found" class="not-found-image" />
+        <!-- 注意这里使用 :src 绑定和 withBase 方法 -->
+        <img :src="withBase('/404-page.png')" alt="404 Not Found" class="not-found-image" />
         <h1 class="not-found-title">页面不存在！</h1>
         <p class="not-found-desc">你是不是迷路了？点下方按钮带你回家</p>
         <button @click="goHome" class="not-found-button">返回首页</button>
     </div>
 </template>
-
 
 <style scoped>
 .NotFound {
