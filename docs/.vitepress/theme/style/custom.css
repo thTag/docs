@@ -1,0 +1,11 @@
+/* 定义自定义字体（使用 .ttf 格式） */
+@font-face {
+  font-family: 'AaCute';       // 字体名称（可自定义）
+  src: url('/AaCute.ttf') format('truetype'); // 字体文件路径（public 目录下的文件用 / 开头）
+  font-display: swap;          // 避免字体加载时文字消失（FOIT）
+}
+
+/* 应用到全局文档 */
+body {
+  font-family: 'AaCute', sans-serif; // 优先用自定义字体，fallback 到系统字体
+}

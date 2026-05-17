@@ -115,8 +115,8 @@ export default withMermaid(
         text: '在 GitHub 上编辑此页'
       },
       footer: {
-  message: '<a href="https://icp.gov.moe/?keyword=20263888" target="_blank">萌ICP备20263888号</a>',
-  copyright: 'Copyright © 2026-present 叹号大帝'
+        message: '<a href="https://icp.gov.moe/?keyword=20263888" target="_blank">萌ICP备20263888号</a>',
+        copyright: 'Copyright © 2026-present 叹号大帝'
       },
       docFooter: {
         prev: '上一页',
@@ -124,7 +124,9 @@ export default withMermaid(
       },
       outline: {
         label: '页面导航'
-      }
+      },
+      // 添加字体配置
+      style: './theme/style/custom.css'
     },
     // Mermaid 配置
     mermaid: {
