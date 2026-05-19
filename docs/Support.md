@@ -8,7 +8,7 @@
 
 | 支付宝 | 赞赏码 |
 | :---: | :---: |
-| <img src="/1777699239599_edit_1833630588789479.jpg" width="220" /> | <img src="/mm_reward_qrcode_1778421620963.png" width="220" /> |
+| <img src="/alipay.png" width="220" /> | <img src="/reward-qr.png" width="220" /> |
 
 ### 赞助说明
 
