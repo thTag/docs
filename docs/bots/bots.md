@@ -16,7 +16,7 @@
 
 | Bot名称 | 平台 | 备注 | 
 | :--- | :--- | :--- | 
-| **tbot** | tg | 含 AI 对话功能。[指令列表点我](./larbot-commands.md) |
+| **tbot** | tg | 含 AI 对话功能。[指令列表点我](./abbot-commands.md) |
 | **叹号 Bot** | qq | 开发中，暂不可用 |
 | **Nova** | qq | 正在审核中，上线时间不详 |
 | **叹号 Bot** | mail | 3856150351@qq.com ，有很强的延迟，不建议日常使用。[指令列表点我](./thbot-commands.md) |
