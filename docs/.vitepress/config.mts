@@ -83,8 +83,6 @@ export default withMermaid(
           text: '🤖 叹号 Bot',
           items: [
             { text: 'Bot 简介', link: '/bots/bots' },
-            { text: 'Lar Bot 指令', link: '/bots/larbot-commands' },
-            { text: '叹号 Bot 指令', link: '/bots/thbot-commands' },
             { text: '更新日志', link: '/bots/bots-updates' },
           ]
         }
