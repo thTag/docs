@@ -80,7 +80,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/th-dd/thdd-docs' }
+      { icon: 'github', link: 'https://github.com/thTag/docs' }
     ],
     search: {
       provider: 'local',
@@ -96,7 +96,7 @@ export default defineConfig({
       }
     },
     editLink: {
-      pattern: 'https://github.com/th-dd/thdd-docs/edit/main/docs/:path',
+      pattern: 'https://github.com/thTag/docs/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
     footer: {

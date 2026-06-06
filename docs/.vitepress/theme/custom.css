@@ -476,6 +476,7 @@
 
 /* ==================== 移动端菜单修复 ==================== */
 /* 确保汉堡菜单按钮正常显示和可点击 */
+/* 损坏的汉堡菜单，如需恢复清取消注释
 .VPNavBarHamburger {
   display: flex !important;
   align-items: center;
@@ -484,6 +485,11 @@
   height: 36px;
   cursor: pointer;
   z-index: 100;
+}
+*/
+
+.VPNavBarHamburger {
+  display: none !important;
 }
 
 .VPNavBarHamburger:hover {

@@ -7,10 +7,10 @@
 | Bot名称 | 描述 | 指令列表 | 
 | :--- | :--- | :--- |
 | **Lar** | 含 AI 对话功能 | [点我跳转！](./abbot-commands.md) |
-| **Nova** | 含 AI 对话功能 | [点我跳转！](./abbot-commands.md) |
-| **花沐（前句号）** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
-| **花陌（前问号）** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
-| **花颜（前逗号）** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
+| **Nova** | 含 AI 对话功能 | - (纯 AI 聊天 Bot) |
+| **花沐** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
+| **花陌** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
+| **花颜** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
 
 ### 其他平台
 
