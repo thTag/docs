@@ -6,24 +6,20 @@
 
 | Bot名称 | 描述 | 指令列表 | 
 | :--- | :--- | :--- |
-| **Lar** | 含 AI 对话功能 | [点我跳转！](./abbot-commands.md) |
-| **Nova** | 含 AI 对话功能 | - (纯 AI 聊天 Bot) |
-| **花沐** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
-| **花陌** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
-| **花颜** | 不含 AI 对话功能 | [点我](./thbot-commands.md) |
+| **Lar** | 含 AI 对话功能 | <@Lar> helps |
+| **Nova** | 含 AI 对话功能 | 无 (纯 AI 聊天 Bot) |
+| **花沐** | 不含 AI 对话功能 | me |
+| **花陌** | 不含 AI 对话功能 | me |
+| **花颜** | 不含 AI 对话功能 | me |
 
 ### 其他平台
 
 | Bot名称 | 平台 | 备注 | 
 | :--- | :--- | :--- | 
-| **tbot** | tg | 含 AI 对话功能。[指令列表点我](./abbot-commands.md) |
+| **tbot** | tg | 含 AI 对话功能。/helps 指令列表 |
 | **叹号 Bot** | qq | 开发中，暂不可用 |
-| **Nova** | qq | 正在审核中，上线时间不详 |
-| **叹号 Bot** | mail | 3856150351@qq.com ，有很强的延迟，不建议日常使用。[指令列表点我](./thbot-commands.md) |
-
-## 更新日志
-
-请见 [更新日志](./bots-updates.md)
+| **Nova** | qq | 暂时搁置了，官机不允许 AIGC |
+| **叹号 Bot** | mail | 3856150351@qq.com ，有很强的延迟，不建议日常使用。me 指令列表 |
 
 ---
 

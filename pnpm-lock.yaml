@@ -235,11 +235,11 @@ packages:
   '@iconify-json/octicon@1.2.28':
     resolution: {integrity: sha512-M6Pj2CclE2kcen6mFd43t9f/BFvVMKYvIdPZj1SD4ocZevgplVf7t98nlVtT8bNk5tawFPT7wtqLl62zq6KJmw==}
 
-  '@iconify-json/simple-icons@1.2.85':
-    resolution: {integrity: sha512-Hp5LXvd3LRk+e+1558wtonA7c1Z0/Phmi7xCqpgtb8bs8cuyGnP34GDbt5uhhUXxKlzacnnhAcXgcDxe9bUa1w==}
+  '@iconify-json/simple-icons@1.2.86':
+    resolution: {integrity: sha512-t3jck5qPQuK1qy+bRn9eCoDQhIB7XSazKz1Fjp8hcan3XOAsTI5Mq/s3F0ekOKSvMQqkVORYK6ns6o6T9f5EMA==}
 
-  '@iconify-json/vscode-icons@1.2.54':
-    resolution: {integrity: sha512-WxGA+FE5AP7mbKuy7lMClIKc/iY9hCKgafZsrCeQjyO2G3MvP/2cZev1W1QPn3tAbXDmVak5K3HB3rxvi+066g==}
+  '@iconify-json/vscode-icons@1.2.55':
+    resolution: {integrity: sha512-7c6yep/OW7/xVWPedBeFbHv5wM4PnRcrZvlsaB+l5cBNWL/6thNE1yuN+PDPQZoEGdXRMUfwDAI3qF0ZVftwag==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1609,11 +1609,11 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.85':
+  '@iconify-json/simple-icons@1.2.86':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/vscode-icons@1.2.54':
+  '@iconify-json/vscode-icons@1.2.55':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -2849,7 +2849,7 @@ snapshots:
   vitepress-plugin-group-icons@1.7.5(vite@7.3.5(less@4.6.4)):
     dependencies:
       '@iconify-json/logos': 1.2.11
-      '@iconify-json/vscode-icons': 1.2.54
+      '@iconify-json/vscode-icons': 1.2.55
       '@iconify/utils': 3.1.3
     optionalDependencies:
       vite: 7.3.5(less@4.6.4)
@@ -2859,7 +2859,7 @@ snapshots:
       '@docsearch/css': 4.6.3
       '@docsearch/js': 4.6.3
       '@docsearch/sidepanel-js': 4.6.3
-      '@iconify-json/simple-icons': 1.2.85
+      '@iconify-json/simple-icons': 1.2.86
       '@shikijs/core': 3.23.0
       '@shikijs/transformers': 3.23.0
       '@shikijs/types': 3.23.0
