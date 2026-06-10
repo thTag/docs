@@ -27,7 +27,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#f97316' }],
   ],
   sitemap: {
-    hostname: 'https://docs.thtag.cn',
+    hostname: 'https://docs.th-dd.top',
   },
   markdown: {
     lineNumbers: true,
