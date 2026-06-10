@@ -2,10 +2,8 @@ import DefaultTheme from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
 import { onMounted, watch, nextTick, h } from 'vue'
 import { useRoute, useData } from 'vitepress'
-import { toRefs } from 'vue'
 import mermaid from 'mermaid'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import NotFound from './components/404-page.vue'
 import ReadingTime from './components/ReadingTime.vue'
 import './custom.css'
@@ -26,23 +24,7 @@ export default {
   },
   setup() {
     const route = useRoute()
-    const { frontmatter } = toRefs(useData())
     const { isDark } = useData()
-
-    // Giscus 评论
-    giscusTalk({
-      repo: 'thTag/docs',
-      repoId: 'R_kgDORHVCQA',
-      category: 'General',
-      categoryId: 'DIC_kwDORHVCQM4Coxxx',
-      mapping: 'pathname',
-      inputPosition: 'top',
-      lang: 'zh-CN',
-      lightTheme: 'light',
-      darkTheme: 'transparent_dark',
-    }, {
-      frontmatter, route
-    }, true)
 
     const initZoom = () => {
       mediumZoom('.main img', { background: 'var(--vp-c-bg)', margin: 24 })
