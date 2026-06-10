@@ -4,12 +4,15 @@
 
 简体中文丨[English](README_EN.md)
 
-🔗 在线访问：[https://docs.th-dd.top](https://docs.th-dd.top)
+## 在线访问
+
+| [![docs.th-dd.top](https://img.shields.io/badge/docs%20on-docs.th--dd.top-2ea44f)](https://docs.th-dd.top) | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://thTag.github.io/docs) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-black)](https://docs-1ne.pages.dev/) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-informational)](https://de98375d.docs-1ne.pages.dev/) |
+|:-:|:-:|:-:|:-:|
 
 ## 🤝 贡献指南
 
-- 📝 发送 [Issue](https://github.com/th-dd/thdd-docs/issues) 报告问题或建议
-- 🔧 提交 [Pull Request](https://github.com/th-dd/thdd-docs/pulls) 改进内容
+- 📝 发送 [Issue](https://github.com/thTag/docs/issues) 报告问题或建议
+- 🔧 提交 [Pull Request](https://github.com/thTag/docs/pulls) 改进内容
 
 ## 📄 许可协议
 
