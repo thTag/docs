@@ -1,21 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-import { execSync } from 'child_process'
-import { resolve } from 'path'
-
-// 获取文件的 git 信息
-function getGitInfo(filePath: string) {
-  try {
-    const cwd = process.cwd()
-    const fullPath = resolve(cwd, 'docs', filePath)
-    const author = execSync(`git log -1 --format="%an" -- "${fullPath}"`, { encoding: 'utf-8', cwd }).trim()
-    const date = execSync(`git log -1 --format="%ci" -- "${fullPath}"`, { encoding: 'utf-8', cwd }).trim()
-    const hash = execSync(`git log -1 --format="%H" -- "${fullPath}"`, { encoding: 'utf-8', cwd }).trim()
-    return { author, date, hash }
-  } catch (e) {
-    return { author: 'Unknown', date: '', hash: '' }
-  }
-}
+import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 export default defineConfig({
   title: "叹号大帝的文档站",
@@ -26,11 +11,13 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     ['meta', { name: 'theme-color', content: '#f97316' }],
   ],
-   markdown: {
+  sitemap: {
+    hostname: 'https://docs.thtag.cn',
+  },
+  markdown: {
     lineNumbers: true,
     config: (md) => {
       md.use(groupIconMdPlugin)
-      // 【新增】识别 mermaid 代码块并转为 div，配合新插件渲染
       const defaultFence = md.renderer.rules.fence
       md.renderer.rules.fence = (tokens, idx, options, env, self) => {
         const token = tokens[idx]
@@ -41,22 +28,29 @@ export default defineConfig({
       }
     },
   },
-  // Vite 配置
-    vite: {
+  vite: {
     plugins: [
       groupIconVitePlugin(),
+      GitChangelog({
+        repoURL: () => 'https://github.com/thTag/docs',
+      }),
+      GitChangelogMarkdownSection(),
     ],
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        'vitepress',
+        '@nolebase/ui',
+      ],
+    },
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/ui',
+      ],
+    },
   },
-  transformPageData(pageData) {
-    const filePath = pageData.relativePath
-    if (filePath) {
-      const gitInfo = getGitInfo(filePath)
-      pageData.frontmatter.gitAuthor = gitInfo.author
-      pageData.frontmatter.gitDate = gitInfo.date
-      pageData.frontmatter.gitHash = gitInfo.hash
-    }
-  },
-    themeConfig: {
+  themeConfig: {
     logo: '/logo.jpg',
     siteTitle: '叹号大帝',
     nav: [
