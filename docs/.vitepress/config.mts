@@ -11,6 +11,9 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     ['meta', { name: 'theme-color', content: '#f97316' }],
   ],
+  sitemap: {
+    hostname: 'https://docs.thtag.cn',
+  },
   markdown: {
     lineNumbers: true,
     config: (md) => {
@@ -33,6 +36,19 @@ export default defineConfig({
       }),
       GitChangelogMarkdownSection(),
     ],
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        'vitepress',
+        '@nolebase/ui',
+      ],
+    },
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/ui',
+      ],
+    },
   },
   themeConfig: {
     logo: '/logo.jpg',
