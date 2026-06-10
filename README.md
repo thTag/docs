@@ -6,7 +6,7 @@
 
 ## 在线访问
 
-| [![docs.th-dd.top](https://img.shields.io/badge/docs%20on-docs.th--dd.top-2ea44f)](https://docs.th-dd.top) | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://thTag.github.io/docs) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-black)](https://docs-1ne.pages.dev/) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-informational)](https://de98375d.docs-1ne.pages.dev/) |
+| [![docs.th-dd.top](https://img.shields.io/badge/docs%20on-docs.th--dd.top-2ea44f)](https://docs.th-dd.top) | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://thTag.github.io/docs) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-black)](https://docs-1ne.pages.dev/) |
 |:-:|:-:|:-:|:-:|
 
 ## 🤝 贡献指南
