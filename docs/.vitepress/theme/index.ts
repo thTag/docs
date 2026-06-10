@@ -4,6 +4,10 @@ import { onMounted, watch, nextTick, h } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import mermaid from 'mermaid'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import NotFound from './components/404-page.vue'
 import ReadingTime from './components/ReadingTime.vue'
 import './custom.css'
@@ -16,6 +20,8 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'not-found': () => h(NotFound),
       'doc-before': () => h(ReadingTime),
+      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
     })
   },
   enhanceApp({ app }) {
