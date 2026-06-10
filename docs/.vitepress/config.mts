@@ -78,6 +78,7 @@ export default defineConfig({
         text: '📖 指南',
         items: [
           { text: '从这里开始', link: '/guide/start' },
+          { text: '更新日志', link: '/changelog' },
           { text: '❤️ 赞助我们', link: '/support' },
         ]
       },
@@ -85,7 +86,6 @@ export default defineConfig({
         text: '叹号 Bot',
         items: [
           { text: '简介', link: '/bots/bots' },
-          { text: '更新日志', link: '/bots/bots-updates' },
         ]
       }
     ],
