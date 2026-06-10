@@ -2,6 +2,21 @@ import { defineConfig } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
+// GitHub 头像代理，解决国内无法加载 avatars.githubusercontent.com 的问题
+function githubAvatarProxy() {
+  return {
+    name: 'github-avatar-proxy',
+    enforce: 'pre' as const,
+    transformIndexHtml(html: string) {
+      // 替换 GitHub 头像为代理地址
+      return html.replace(
+        /https:\/\/avatars\.githubusercontent\.com/g,
+        'https://avatar.duishang.cn'
+      )
+    },
+  }
+}
+
 export default defineConfig({
   title: "叹号大帝的文档站",
   description: "叹号旗下各类文档和笔记",
@@ -10,8 +25,6 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     ['meta', { name: 'theme-color', content: '#f97316' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-    ['meta', { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self'; img-src 'self' https://avatars.githubusercontent.com https://github.com https://githubusercontent.com https://*.githubusercontent.com data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.github.com https://github.com" }],
   ],
   sitemap: {
     hostname: 'https://docs.thtag.cn',
@@ -32,6 +45,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
+      githubAvatarProxy(),
       groupIconVitePlugin(),
       GitChangelog({
         repoURL: () => 'https://github.com/thTag/docs',
