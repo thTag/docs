@@ -6,8 +6,8 @@
 
 ## Online Access
 
-| [![docs.th-dd.top](https://img.shields.io/badge/docs%20on-docs.th--dd.top-2ea44f)](https://docs.th-dd.top) | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://thTag.github.io/docs) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-black)](https://docs-1ne.pages.dev/) |
-|:-:|:-:|:-:|
+| [![docs.th-dd.top](https://img.shields.io/badge/docs%20on-docs.th--dd.top-2ea44f)](https://docs.th-dd.top) | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://thTag.github.io/docs) | [![Cloudflare.Page](https://img.shields.io/badge/docs%20on-Cloudflare.Page-black)](https://docs-1ne.pages.dev/) | [![EdgeOne.Page](https://img.shields.io/badge/docs%20on-EdgeOne.Page-blue)](https://eo-docs.th-dd.top) |
+|:-:|:-:|:-:|:-:|
 
 ## 🤝 Contributing
 
