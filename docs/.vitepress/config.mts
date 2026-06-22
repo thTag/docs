@@ -50,7 +50,11 @@ export default defineConfig({
       GitChangelog({
         repoURL: () => 'https://github.com/thTag/docs',
       }),
-      GitChangelogMarkdownSection(),
+      GitChangelogMarkdownSection({
+        sections: {
+          disableContributors: true, // 全局关闭贡献者区块，仅保留页面历史
+        },
+      }),
     ],
     optimizeDeps: {
       exclude: [
