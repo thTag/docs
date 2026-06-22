@@ -1,12 +1,20 @@
 {
   "devDependencies": {
+    "@nolebase/markdown-it-unlazy-img": "^2.18.2",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
     "medium-zoom": "^1.1.0",
     "mermaid": "^11.15.0",
+    "vite-plugin-vitepress-auto-sidebar": "^1.7.1",
     "vitepress": "2.0.0-alpha.17",
     "vitepress-mermaid-renderer": "^1.1.27",
-    "vitepress-plugin-group-icons": "^1.7.5"
+    "vitepress-plugin-group-icons": "^1.7.5",
+    "vitepress-plugin-llms": "^1.13.1",
+    "vitepress-plugin-music": "^0.0.9",
+    "vitepress-plugin-npm2yarn": "^0.2.0",
+    "vitepress-plugin-pagefind": "^0.4.20"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",

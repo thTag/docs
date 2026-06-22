@@ -4,15 +4,21 @@ import { onMounted, watch, nextTick, h } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import mermaid from 'mermaid'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
+import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+
 import NotFound from './components/404-page.vue'
 import ReadingTime from './components/ReadingTime.vue'
+
 import './custom.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+// 注意：样式路径是 /client/style.css，不是 /style.css
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 
 export default {
   extends: DefaultTheme,
@@ -26,6 +32,7 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(NolebaseGitChangelogPlugin)
+    app.use(NolebaseInlineLinkPreviewPlugin)
     app.component('ReadingTime', ReadingTime)
   },
   setup() {
