@@ -7,6 +7,7 @@
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
     "medium-zoom": "^1.1.0",
     "mermaid": "^11.15.0",
+    "pagefind": "^1.5.2",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.1",
     "vitepress": "2.0.0-alpha.17",
     "vitepress-mermaid-renderer": "^1.1.27",
