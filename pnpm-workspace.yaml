@@ -2,3 +2,4 @@ allowBuilds:
   esbuild: true
 minimumReleaseAgeExclude:
   - vitepress@2.0.0-alpha.18
+  - vitepress-plugin-pagefind@0.4.21
