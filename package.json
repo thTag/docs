@@ -12,7 +12,7 @@
     "vitepress": "2.0.0-alpha.18",
     "vitepress-mermaid-renderer": "^1.1.27",
     "vitepress-plugin-group-icons": "^1.7.5",
-    "vitepress-plugin-llms": "^1.13.2",
+    "vitepress-plugin-llms": "^1.13.3",
     "vitepress-plugin-music": "^0.0.9",
     "vitepress-plugin-npm2yarn": "^0.2.0",
     "vitepress-plugin-pagefind": "^0.4.21"
