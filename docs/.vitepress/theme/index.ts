@@ -12,6 +12,7 @@ import {
 
 import NotFound from './components/404-page.vue'
 import ReadingTime from './components/ReadingTime.vue'
+import La51Stats from './components/La51Stats.vue'
 
 import './custom.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
@@ -34,6 +35,8 @@ export default {
     app.use(NolebaseGitChangelogPlugin)
     app.use(NolebaseInlineLinkPreviewPlugin)
     app.component('ReadingTime', ReadingTime)
+    // 全局注册 51.la 统计展示组件，可在任意 Markdown 中通过 <La51Stats /> 使用
+    app.component('La51Stats', La51Stats)
   },
   setup() {
     const route = useRoute()
