@@ -14,6 +14,7 @@ import llmstxt from 'vitepress-plugin-llms'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import Music from 'vitepress-plugin-music'
 import { npm2yarnPlugin } from 'vitepress-plugin-npm2yarn'
+import { La51Plugin } from 'vitepress-plugin-51la'
 
 // GitHub 头像代理，解决国内无法加载 avatars.githubusercontent.com 的问题
 function githubAvatarProxy() {
@@ -77,6 +78,13 @@ export default defineConfig({
       llmstxt(),
       pagefindPlugin(),
       Music(),
+      // 51.la 网站数据统计
+      La51Plugin({
+        id: '3Qh7e1TTr9mNqdFF',
+        ck: '3Qh7e1TTr9mNqdFF',
+        autoTrack: true,
+        hashMode: true,
+      }),
     ],
     optimizeDeps: {
       exclude: [
