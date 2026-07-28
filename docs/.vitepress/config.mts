@@ -143,7 +143,7 @@ export default defineConfig({
       copyright: 'Copyright © 2026-present 叹号大帝'
     },
     docFooter: { prev: '上一页', next: '下一页' },
-    outline: { label: '页面导航' },
+    outline: { Menu: '菜单', label: '页面导航', Return to top: '回到顶部' },
     style: './theme/style/custom.css'
   },
 })
