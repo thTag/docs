@@ -127,7 +127,7 @@
 ```
 :::
 
-![抖音更新弹窗示例](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6931d8a2645e497c928bc647e5c69069~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![抖音更新弹窗示例](/douyin-update-popup.webp)
 
 ---
 
@@ -156,7 +156,7 @@
 
 👉 [点击跳转：如何获取叉号的 id 或 bounds？](#如何获取控件的-id-或-bounds)
 
-![美团弹窗示例](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db9ec937deee4272a1b86c150aa4e7d5~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![美团弹窗示例](/meituan-popup.webp)
 
 ---
 
