@@ -9,6 +9,9 @@ import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+// 缩略图模糊哈希渲染组件，配合 thumbnail-hash 插件使用
+import { NolebaseUnlazyImg } from '@nolebase/vitepress-plugin-thumbnail-hash/client'
+import '@nolebase/vitepress-plugin-thumbnail-hash/client/style.css'
 
 import NotFound from './components/404-page.vue'
 import ReadingTime from './components/ReadingTime.vue'
@@ -37,6 +40,8 @@ export default {
     app.component('ReadingTime', ReadingTime)
     // 全局注册 51.la 统计展示组件，可在任意 Markdown 中通过 <La51Stats /> 使用
     app.component('La51Stats', La51Stats)
+    // 全局注册 NolebaseUnlazyImg 组件，用于渲染带 thumbhash 模糊预览的图片
+    app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
   },
   setup() {
     const route = useRoute()

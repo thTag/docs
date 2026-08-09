@@ -7,6 +7,8 @@ import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-p
 import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 // 注意：highlight-targeted-heading 没有 Vite 插件入口，纯客户端，config 里不需要引入
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
+// 缩略图模糊哈希生成（配合 markdown-it-unlazy-img 使用，生成 thumbhash 缓存文件）
+import { ThumbnailHashImages } from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
 
 // 引入其他功能插件
 import llmstxt from 'vitepress-plugin-llms'
@@ -48,7 +50,11 @@ export default defineConfig({
     config: (md) => {
       md.use(groupIconMdPlugin)
       md.use(npm2yarnPlugin)
-      md.use(UnlazyImages())
+      md.use(UnlazyImages(), {
+        // 指定渲染的图片标签为 NolebaseUnlazyImg 组件，
+        // 配合 thumbnail-hash 插件生成的 thumbhash 数据实现模糊预览
+        imgElementTag: 'NolebaseUnlazyImg',
+      })
       // inline-link-preview 作为 markdown-it 插件挂载
       md.use(InlineLinkPreviewElementTransform)
 
@@ -74,6 +80,9 @@ export default defineConfig({
           disableContributors: true, // 全局关闭贡献者区块，仅保留页面历史
         },
       }),
+      // 缩略图模糊哈希生成，扫描图片并生成 thumbhash 缓存数据
+      // 配合 markdown-it-unlazy-img 实现图片懒加载 + 模糊预览
+      ThumbnailHashImages(),
       // 注意：inline-link-preview 和 highlight-targeted-heading 不在这里
       llmstxt(),
       pagefindPlugin(),
@@ -86,6 +95,15 @@ export default defineConfig({
         hashMode: true,
       }),
     ],
+    // 配置 Vue 模板中 NolebaseUnlazyImg 组件的 src 属性，
+    // 使 VitePress 在构建时能正确解析和转换图片资源路径
+    vue: {
+      template: {
+        transformAssetUrls: {
+          NolebaseUnlazyImg: ['src'],
+        },
+      },
+    },
     optimizeDeps: {
       exclude: [
         '@nolebase/vitepress-plugin-enhanced-readabilities/client',
@@ -100,6 +118,7 @@ export default defineConfig({
         '@nolebase/vitepress-plugin-inline-link-preview',
         '@nolebase/vitepress-plugin-highlight-targeted-heading',
         '@nolebase/markdown-it-unlazy-img',
+        '@nolebase/vitepress-plugin-thumbnail-hash',
         'vitepress-plugin-llms',
         'vitepress-plugin-pagefind',
         'vitepress-plugin-music',
