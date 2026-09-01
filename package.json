@@ -11,7 +11,7 @@
     "pagefind": "^1.5.2",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.1",
     "vitepress": "2.0.0-alpha.19",
-    "vitepress-mermaid-renderer": "^1.1.28",
+    "vitepress-mermaid-renderer": "^1.2.0",
     "vitepress-plugin-51la": "^0.1.2",
     "vitepress-plugin-announcement": "^0.1.9",
     "vitepress-plugin-group-icons": "^1.7.5",
