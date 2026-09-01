@@ -15,7 +15,7 @@
     "vitepress-plugin-51la": "^0.1.2",
     "vitepress-plugin-announcement": "^0.1.9",
     "vitepress-plugin-group-icons": "^1.7.5",
-    "vitepress-plugin-llms": "^1.13.3",
+    "vitepress-plugin-llms": "^1.13.5",
     "vitepress-plugin-music": "^0.0.9",
     "vitepress-plugin-npm2yarn": "^0.2.0",
     "vitepress-plugin-pagefind": "^0.4.23"
