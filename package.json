@@ -18,7 +18,7 @@
     "vitepress-plugin-llms": "^1.14.0",
     "vitepress-plugin-music": "^0.0.9",
     "vitepress-plugin-npm2yarn": "^0.2.0",
-    "vitepress-plugin-pagefind": "^0.4.23"
+    "vitepress-plugin-pagefind": "^0.4.25"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
