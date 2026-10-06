@@ -4,21 +4,15 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 10
+    groups:
+      patterns:
+        "*"
     commit-message:
       prefix: "chore"
-    ignore:
-      # vitepress 预发布版
-      - dependency-name: "vitepress"
-        versions: [">=1.0.0 <2.0.0"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
     commit-message:
       prefix: "ci"
-    labels:
-      - "github-actions"
-
