@@ -42,8 +42,8 @@ importers:
         specifier: 2.0.0-alpha.21
         version: 2.0.0-alpha.21(less@4.9.1(supports-color@7.2.0))(postcss@8.5.31)(typescript@6.0.3)
       vitepress-mermaid-renderer:
-        specifier: ^1.2.2
-        version: 1.2.2(mermaid@12.2.0)(vue@3.5.44(typescript@6.0.3))
+        specifier: ^1.2.3
+        version: 1.2.3(mermaid@12.2.0)(vue@3.5.44(typescript@6.0.3))
       vitepress-plugin-51la:
         specifier: ^0.1.2
         version: 0.1.2(vitepress@2.0.0-alpha.21(less@4.9.1(supports-color@7.2.0))(postcss@8.5.31)(typescript@6.0.3))
@@ -1638,6 +1638,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -3014,8 +3015,8 @@ packages:
       yaml:
         optional: true
 
-  vitepress-mermaid-renderer@1.2.2:
-    resolution: {integrity: sha512-ae+FXMF6of+ELj3XDTW8iA8eeepVePIRLfffzr0mHz4R9CqUfExtLI3aaaDmPm6IELTH68SCBHQENnaBz7WSjg==}
+  vitepress-mermaid-renderer@1.2.3:
+    resolution: {integrity: sha512-qcUM8CPLZSH920rAQctUPKwkbp+Pxc/ZnO6m1ne3k0Vyx/1T0svMlCfgH55ylVFHZgAiL70/OxR0TYDOyx8rKw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@mermaid-js/mermaid-zenuml': ^1.0.0
@@ -6384,7 +6385,7 @@ snapshots:
       fsevents: 2.3.3
       less: 4.9.1(supports-color@7.2.0)
 
-  vitepress-mermaid-renderer@1.2.2(mermaid@12.2.0)(vue@3.5.44(typescript@6.0.3)):
+  vitepress-mermaid-renderer@1.2.3(mermaid@12.2.0)(vue@3.5.44(typescript@6.0.3)):
     dependencies:
       mermaid: 12.2.0
       vue: 3.5.44(typescript@6.0.3)
