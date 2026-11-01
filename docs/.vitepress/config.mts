@@ -139,6 +139,7 @@ export default defineConfig({
         text: '📖 指南',
         items: [
           { text: '从这里开始', link: '/guide/start' },
+          { text: '小米手环/表固件提取教程', link: '/guide/miband-watch-extract' },
           { text: '更新日志', link: '/changelogs' },
           { text: '❤️ 赞助我们', link: '/support' },
         ]
